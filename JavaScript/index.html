@@ -4,22 +4,50 @@
     <head>
 
        <script>
-      //  Take 2 variable and compare them using == and ===, such that result of both the comparision operations is not equal.
-     var x = "20"
-     var y = 20
-     var x1 = 20
-     var y1 = 20
-     if(x===y)
-       document.write("x===y"+"<br>")
-    else 
-    document.write("x==y"+"<br>")
+           // 1. Take 2 numbers and print the smallest one amongst them
 
-    if(x1 ===20 )
-    document.write("x1===y1"+"<br>")
+      var a = 6 , b = 7;
+    var  result=a<b? "a is the smallest one.": "b is the smallest one.";
+     document.write(result+"<br>")
+
+     //2.Take 3 numbers and print the biggest one amongst them
+      var c=8;
+if (a > b) {
+    if (a >= c)
+        document.write("a is largest");
     else
-    document.write("x1==y1"+"<br>")
-     
+        document.write("c is largest");
+} else {
+    if (b >= c)
+        document.write("b is largest");
+    else
+        document.write("c is largest");
+}
 
+// 3. Use switch case to return a grade for the score, either "A", "B", "C", "D", or "F".
+const score= 87;
+let grade= "NA";
+switch(Math.floor(score/10)){
+    case 10:
+    case 9:
+        grade="A";
+        break;
+    case 8:
+        grade="B";
+        break;
+    case 7:
+        grade="C";
+        break;
+    case 6:
+        grade="D";
+        break;
+    case 5:
+        grade="E";
+        break;
+    default:
+        grade="F";
+}
+document.write("<br>"+`Grade: ${grade}`);
 
 
 
