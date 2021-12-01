@@ -1,16 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script>
+
+       <script>
             //1. Declare all the variables in above form without initialising and print their value.
-        var name,email,age,phoneNo,gender,martialStatus;
+     /*   var name,email,age,phoneNo,gender,martialStatus;
         document.write("Name:"+name+"<br>");
         document.write("Email:"+email+"<br>");
         document.write("Age:"+age+"<br>");
         document.write("PhoneNo:"+phoneNo+"<br>");
         document.write("Gender:"+gender+"<br>");
         document.write("MartialStatus:"+martialStatus+"<br>");
+        */
+       //2. 2. After printing their value assign them as null and print it again.
+       /*var name = null
+       var email = null
+       var age = null
+       var phoneNo =null
+      var  gender = null 
+      var martialStatus = null;
+        document.write("Name:"+name+"<br>");
+        document.write("Email:"+email+"<br>");
+        document.write("Age:"+age+"<br>");
+        document.write("PhoneNo:"+phoneNo+"<br>");
+        document.write("Gender:"+gender+"<br>");
+        document.write("MartialStatus:"+martialStatus+"<br>");
+*/
+//3. Declare an object called employeeDetails and add all the above variables to this object now as keys with value as null and print this object.
+var employeeDetails=new Object()
+                employeeDetails.name=null
+                employeeDetails.email=null
+                employeeDetails.age=null
+                employeeDetails.add=null
+                employeeDetails.phone=null
+                employeeDetails.married=null
+                
+                document.writeln( 'name: ',employeeDetails.name +"<br>")
+                document.write("\n");
+ 
+                document.writeln(' email: ',employeeDetails.email+"<br>")
+                document.write("\n");
+ 
+                document.writeln(' age: ',employeeDetails.age+"<br>")
+                document.writeln('address: ',employeeDetails.add+"<br>")
+                document.writeln(' phone no: ',employeeDetails.phone+"<br>")
+                document.writeln(' marital status:',employeeDetails.married+"<br>")
+ 
 
-        </script>
+
+        </script> 
+
     </head>
 </html>
