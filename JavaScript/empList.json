@@ -1,0 +1,5 @@
+[{"name":"Yashi","email":"abc@gmail.com","age":20,"address":"Indore, Madhya Pradesh","phoneNumber":"1234567890","gender":"Male","isMarried":false,"salary":592000},
+    {"name":"Harsh","email":"abc@gmail.com","age":40,"address":"Indore, Madhya Pradesh","phoneNumber":"1234567890","gender":"Male","isMarried":true,"salary":520000},
+    {"name":"Chaya","email":"abc@gmail.com","age":70,"address":"Indore, Madhya Pradesh","phoneNumber":"1234567890","gender":"Male","isMarried":false,"salary":505000},
+    {"name":"Aarushi","email":"abc@gmail.com","age":70,"address":"Indore, Madhya Pradesh","phoneNumber":"1234567890","gender":"Male","isMarried":true,"salary":573000}]
+    
