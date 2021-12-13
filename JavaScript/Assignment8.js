@@ -52,26 +52,26 @@ const empolyeeArray = [
 }
 ]
 function emp (empArray,ageNumber){
-    return emparr.filter(empArray => emparr.age < ageNumber);
+    return employeeArray.filter(empArray => emparr.age < ageNumber);
 }
 console.log(emp(emparr,40));
 
 //3.3. Create a function that takes 2 parameter => an array of employees and an attribute and returns all employees sorted based on the emoplees attribute being passed as second parameter.
-function sortEmployees(empArr, attribute){ 
-    emparr.sort( function(first, second){  
-                                if(first[attribute] > second[attribute])
-                                    return 1;
-                                if(first[attribute] < second[attribute])
-                                    return -1;
-                                return 0;
-                                })
-}
 
-sortEmployees(empArr, 'name');
-console.log(empArr);
-sortEmployees(empArr, 'age');
-console.log(empArr);
-sortEmployees(empArr, 'email');
-console.log(empArr);
+const customSort = (employeeArray, attribute) => {
+  const compare = (a, b) => {
+    switch (typeof a[attribute]) {
+      case "number":
+        return a[attribute] - b[attribute];
+      case "boolean":
+        return Number(b[attribute]) - Number(a[attribute]);
+      default:
+        if (a[attribute] > b[attribute]) return 1;
+        if (a[attribute] < b[attribute]) return -1;
+        return 0;
 
+    };
+
+customSort(employeeArray,name);
+customSort(employeeArray,age);
 
