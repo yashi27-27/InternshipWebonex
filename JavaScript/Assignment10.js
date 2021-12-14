@@ -1,4 +1,4 @@
-const Employees = require("./Employee");
+const Employees = require("./Employees").default;
 const employeeArray = [ 
 {
     name:"Yashi",
@@ -30,7 +30,7 @@ const employeeArray = [
     salary:592000
 }
 ]
-const obj = new Employee(employeeArray);
+const obj = new Employees(employeeArray);
 let sortedArray = obj.sortEmployees("name");
 console.log(sortedArray);
 

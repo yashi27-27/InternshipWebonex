@@ -22,4 +22,4 @@ class Employees {
                 return employee.age < age;
             }
         }
-        module.exports = Employees;
+        export default Employees;
