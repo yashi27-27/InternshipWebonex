@@ -19,9 +19,9 @@ try{
 let a;
 function getNumber(m, n) {
     for (let i = m; i <= n; i++) {
-        a = setInterval(() => {
+        a = setTimeout(() => {
             console.log(i);
-        }, 100);
+        }, i*100);
     }
 }
 clearInterval(a);
